@@ -1,0 +1,8 @@
+<form (submit)="login()">
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email" [(ngModel)]="email">
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" [(ngModel)]="password">
+  <button type="submit">Log in</button>
+</form>
+<p *ngIf="message">{{message}}</p>
